@@ -72,7 +72,7 @@ select {
   padding-right: 40px;
 }
 
-/* Improve radio button styling */
+/* Improve radio button styling - ensure perfect circles */
 input[type="radio"] {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -84,6 +84,9 @@ input[type="radio"] {
   background: white;
   position: relative;
   cursor: pointer;
+  flex-shrink: 0; /* Prevent shrinking */
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
 }
 
 input[type="radio"]:checked {
@@ -101,6 +104,12 @@ input[type="radio"]:checked::after {
   height: 8px;
   background: white;
   border-radius: 50%;
+}
+
+/* Ensure radio buttons maintain circular shape */
+input[type="radio"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
 }
 
 /* Mobile-specific animations */
