@@ -1,0 +1,5 @@
+{
+  "name": "Cuestionario de Talleres",
+  "description": "Una aplicación de cuestionario interactivo y estéticamente agradable para recopilar comentarios sobre talleres. Cuenta con una interfaz de varios pasos, animaciones suaves y un diseño moderno.",
+  "requestFramePermissions": []
+}
